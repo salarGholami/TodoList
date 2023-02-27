@@ -20,10 +20,23 @@
   border: 0.5px solid #ccc;
   border-radius: 5px;
   padding: 19px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgb(14, 126, 230) 0px -36px 30px 0px inset,
-    rgba(14, 126, 230, 0.395) 0px -79px 40px 0px inset,
-    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgb(0, 0, 0) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.821) 0px 16px 8px,
-    rgba(0, 0, 0, 0.107) 0px 32px 16px;
+}
+
+input[type="text"] {
+  width: 20rem;
+  background-color: gray;
+  padding: 1rem 0.5rem;
+  color: white;
+}
+
+input[type="text"]:focus {
+  border: 5px solid rgba(140, 210, 165, 0.646);
+}
+
+button {
+  color: white;
+  border: 1px solid #ccc;
+  background-color: rgba(140, 210, 165, 0.646);
+  padding: 1rem 2.5rem;
+  cursor: pointer;
 }
