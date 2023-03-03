@@ -18,25 +18,48 @@
   width: 40rem;
   background-color: rgba(103, 102, 103, 0.541);
   border: 0.5px solid #ccc;
-  border-radius: 5px;
   padding: 19px;
 }
 
 input[type="text"] {
-  width: 20rem;
+  width: 15rem;
   background-color: gray;
   padding: 1rem 0.5rem;
   color: white;
+  border: none;
 }
 
 input[type="text"]:focus {
-  border: 5px solid rgba(140, 210, 165, 0.646);
+  border: 1px solid #8cd2a5a5;
+  appearance: none;
+  outline: none;
 }
 
 button {
+  outline: none;
+  border-radius: 0px;
+  appearance: none;
+  border: none;
   color: white;
-  border: 1px solid #ccc;
   background-color: rgba(140, 210, 165, 0.646);
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
   cursor: pointer;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  margin: 10px 0;
+}
+
+.todo button {
+  margin-left: 5px;
+  padding: 0.5rem;
+}
+
+.complate {
+  text-decoration: line-through;
+  color: blue;
 }

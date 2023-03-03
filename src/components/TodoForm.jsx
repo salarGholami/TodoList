@@ -3,8 +3,7 @@ import { useState } from "react";
 const TodoForm = (props) => {
   const [input, setInput] = useState("");
 
-  const changeHandler = (e) => {
-    // console.log(e.target.value);
+  const changeHandler = (e) => { 
     setInput(e.target.value);
   };
 
@@ -13,7 +12,7 @@ const TodoForm = (props) => {
     if (!input) {
       alert("Enter Todo!");
       return;
-    }
+    } 
     props.addTodoHandler(input);
     setInput("");
   };
