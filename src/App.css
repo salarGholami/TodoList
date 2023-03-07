@@ -46,6 +46,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: rgb(140, 210, 165);
+}
+
 .todo {
   display: flex;
   justify-content: space-between;
@@ -57,9 +61,26 @@ button {
 .todo button {
   margin-left: 5px;
   padding: 0.5rem;
+  border-radius: 3px;
 }
 
 .complate {
   text-decoration: line-through;
   color: blue;
+}
+
+.btnRemove {
+  background-color: rgba(210, 140, 140, 0.646);
+}
+
+.btnRemove:hover {
+  background-color: rgb(210, 140, 140);
+}
+
+.btnEdit {
+  background-color: rgba(210, 210, 140, 0.646);
+}
+
+.btnEdit:hover {
+  background-color: rgb(210, 210, 140);
 }

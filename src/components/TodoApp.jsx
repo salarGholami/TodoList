@@ -6,7 +6,6 @@ const TodoApp = () => {
   const [todos, setTodos] = useState([]);
 
   const addTodoHandler = (input) => {
-    console.log(input);
     const newTodo = {
       id: Math.floor(Math.random() * 1000),
       text: input,
@@ -27,10 +26,15 @@ const TodoApp = () => {
     setTodos(updateTodos);
   };
 
+  const removeTodo = (id) => {
+    const filteredTodos = todos.filter((t) => t.id !== id);
+    setTodos(filteredTodos);
+  };
+
   return (
     <div className="container">
       <TodoForm addTodoHandler={addTodoHandler} />
-      <TodoList todos={todos} onComplate={complateTodo} />
+      <TodoList todos={todos} onComplate={complateTodo} onDelete={removeTodo} />
     </div>
   );
 };
