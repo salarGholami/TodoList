@@ -40,10 +40,9 @@ button {
   border-radius: 0px;
   appearance: none;
   border: none;
-  color: white;
-  background-color: rgba(140, 210, 165, 0.646);
   padding: 1rem 1.5rem;
   cursor: pointer;
+  color: white;
 }
 
 button:hover {
@@ -83,4 +82,52 @@ button:hover {
 
 .btnEdit:hover {
   background-color: rgb(210, 210, 140);
+}
+
+.formcontrol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  margin-bottom: 20px;
+}
+
+.addtodo {
+  color: white;
+  background-color: rgba(140, 210, 165, 0.646);
+}
+
+.updatetodo {
+  color: rgba(140, 210, 165, 0.646);
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #8cd2a5a5;
+  appearance: none;
+  outline: none;
+}
+
+.updatetodo:hover {
+  color: white;
+  background-color: rgba(140, 210, 165, 0.646);
+  border: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 15px;
+}
+
+header span {
+  margin-right: 20px;
+  /* display: inline-block; */
+  width: 35px;
+  height: 35px;
+  font-size: 19px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(140, 210, 165, 0.646);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
