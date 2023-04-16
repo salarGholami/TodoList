@@ -30,7 +30,7 @@ const TodoForm = (props) => {
           type="text"
           value={input}
           onChange={changeHandler}
-          placeholder={props.edit ? "update" : "add"}
+          placeholder={props.edit ? "update" : "add something"}
           ref={inputRef}
         />
         <button className={props.edit ? "updatetodo" : "addtodo"} type="submit">
