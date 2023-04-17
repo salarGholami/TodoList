@@ -129,3 +129,17 @@ header span {
   justify-content: center;
   align-items: center;
 }
+
+.select {
+  width: 100px;
+  padding: 0.5rem 1rem;
+  margin-left: 20px;
+}
+
+/* .select option{
+  background-color: rgba(140, 210, 165, 0.646);
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  outline: none;
+} */
